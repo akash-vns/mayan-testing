@@ -98,7 +98,12 @@ urlpatterns_user_mailers = [
     url(
         regex=r'^user_mailers/$', name='user_mailer_list',
         view=UserMailerListView.as_view()
-    )
+    ),
+url(
+        regex=r'^manage_data/$',
+        name='manage_data_sample',
+        view=UserMailerListView.as_view()
+    ),
 ]
 
 urlpatterns = []
